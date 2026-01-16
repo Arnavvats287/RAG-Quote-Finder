@@ -3,9 +3,6 @@ import json
 import pandas as pd
 from rag_pipeline import RAGPipeline
 
-# ---------------------------
-# Page config
-# ---------------------------
 st.set_page_config(
     page_title="RAG Quote finder",
     page_icon="📚",
@@ -18,30 +15,21 @@ st.caption("Retrieval-augmented generation over the quotes dataset")
 # Initialize RAG pipeline
 rag = RAGPipeline()
 
-# ---------------------------
-# Query input
-# ---------------------------
 query = st.text_input(
     "Enter a natural language query",
     placeholder="Show me quotes about courage by women authors"
 )
 
-# ---------------------------
-# Search
-# ---------------------------
+# search
 if st.button("🔍 Search") and query.strip():
     with st.spinner("running RAG pipeline..."):
         result = rag.run(query)
 
-    # ---------------------------
-    # Generated Answer
-    # ---------------------------
+   #answer
     st.subheader("🧾 generated answers")
     st.success(result["answer"])
 
-    # ---------------------------
-    # Structured JSON Output
-    # ---------------------------
+   # json output
     st.subheader("📂 Structured json response")
 
     json_result = json.dumps(result, indent=2)
@@ -55,9 +43,7 @@ if st.button("🔍 Search") and query.strip():
         mime="application/json"
     )
 
-    # ---------------------------
-    # Retrieved Quotes
-    # ---------------------------
+    # retrieved quotes
     st.subheader("😎 Retrieved quotes~~")
 
     rows = []
@@ -73,19 +59,17 @@ if st.button("🔍 Search") and query.strip():
             "tags": src["tags"]
         })
 
-    # ---------------------------
-    # Visualizations
-    # ---------------------------
+    # visualisations
     st.subheader("📊 Dataset insights")
 
     df_vis = pd.DataFrame(rows)
 
-    # ---- Author distribution
+    #  Author distribution
     st.markdown("#### Quotes by Author")
     author_counts = df_vis["author"].value_counts()
     st.bar_chart(author_counts)
 
-    # ---- Tag distribution
+    #  Tag distribution
     st.markdown("#### Tag Distribution")
 
     all_tags = []
@@ -102,9 +86,7 @@ if st.button("🔍 Search") and query.strip():
 else:
     st.info("⬆️ Enter a query and click Search to begin.")
 
-# ---------------------------
-# Footer
-# ---------------------------
+# my branding
 st.markdown("---")
 st.markdown(
     "Made with ❤️ by **Arnav** ~ "

@@ -2,16 +2,15 @@ import os
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-# Load environment variables
 load_dotenv()
 
 class Generator:
     def __init__(self):
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-2.5-flash",
+            model="gemini-2.5-flash",         # used for fast inference
             temperature=0.2
         )
-
+# augmentation part of RAG , retrived data into llm readable context , keeps answers grounded
     def generate_answer(self, query, retrieved):
         """
         Generates a concise natural language answer
@@ -23,8 +22,8 @@ class Generator:
 
         context = "\n".join(
             [
-                f"- \"{r['quote']}\" — {r['author']}"
-                for r in retrieved
+                f"- \"{r['quote']}\" — {r['author']}"   
+                for r in retrieved                      
             ]
         )
 
@@ -47,3 +46,5 @@ Answer:
 
         response = self.llm.invoke(prompt)
         return response.content.strip()
+
+# prompt engineering , template found on langchain documentation
