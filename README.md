@@ -203,3 +203,10 @@ This project demonstrates a complete, real-world Retrieval-Augmented Generation 
 * ✔ Visualization
 * ✔ User-friendly UI
 
+
+---
+
+<div align="center">
+Thanks, made with 💜 by arnav
+
+</div>
