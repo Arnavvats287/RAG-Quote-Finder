@@ -9,7 +9,7 @@
 
 ##  Demo Video
 
-▶️ **CLICK HERE👇**
+▶️ `CLICK HERE👇`
 
 [![Watch the demo](https://img.youtube.com/vi/zVL5Hq1mDPI/hqdefault.jpg
 )](https://youtu.be/zVL5Hq1mDPI)
@@ -119,7 +119,7 @@ Answer + Sources + Structured JSON Output
 * Sentence-Transformers (all-MiniLM-L6-v2)
 * Vector Database	FAISS
 * Google Gemini
-*RAG Evaluation	RAGAS
+* RAG Evaluation	RAGAS
 
 All are listed in `requirements.txt`, just run the file.
 
@@ -133,15 +133,15 @@ python rag_evaluation.py
 
 ### Why Sentence Transformers?
 
-* Lightweight and fast
+* `Lightweight` and `fast
 
-* Strong semantic similarity
+* Strong `semantic similarity`
 
 * Ideal for short text like quotes
 
 ### Why FAISS?
 
-* Extremely fast vector search
+* Extremely fast `vector search`
 
 * Scales efficiently
 
@@ -149,9 +149,9 @@ python rag_evaluation.py
 
 ### Why Gemini?
 
-* Free API access
+* Free `API` access
 
-* fast inference
+* fast `inference`
 
 * Easy integration into GenAI workflows
 
@@ -159,7 +159,7 @@ python rag_evaluation.py
 
 * Required for RAG evaluation
 
-* Downloadable results
+* `Downloadable` results
 
 * Production-ready format
 
@@ -173,9 +173,9 @@ python rag_evaluation.py
 
 ## ⚠️ Challenges Faced
 
-* CUDA vs CPU tensor loading issues
+* `CUDA` vs `CPU` tensor loading issues
 
-* Gemini model availability mismatches
+* `Gemini` model availability mismatches
 
 * Finetuning model over small dataset
 
@@ -195,13 +195,19 @@ python rag_evaluation.py
 
 This project demonstrates a complete, real-world Retrieval-Augmented Generation system:
 
-* ✔ Data preparation
-* ✔ Embedding & indexing
-* ✔ Retrieval
-* ✔ Generation
-* ✔ Evaluation
-* ✔ Visualization
-* ✔ User-friendly UI
+✔ Data preparation
+
+✔ Embedding & indexing
+
+✔ Retrieval
+
+✔ Generation
+
+✔ Evaluation
+
+✔ Visualization
+
+✔ User-friendly UI
 
 
 ---
