@@ -21,26 +21,6 @@ https://youtu.be/zVL5Hq1mDPI
 
 ---
 
-## Application Screenshots
-
-### Streamlit Home Page
-
-![Streamlit Home Page](Screenshots/home.png "Streamlit UI")
-
-### Structured JSON Output+ download
-
-![Streamlit Home Page](Screenshots/json.png "Streamlit UI")
-
-### Retrieved quotes page 
-
-![Streamlit Home Page](Screenshots/retrieved.png "Streamlit UI")
-
-### Visualizations page
-
-![Streamlit Home Page](Screenshots/visuals.png "Streamlit UI")
-
----
-
 
 ## Project Overview
 
@@ -86,6 +66,26 @@ python build_faiss.py
 ```bash
 streamlit run app.py
 ```
+
+## Application Screenshots
+
+### Streamlit Home Page
+
+![Streamlit Home Page](Screenshots/home.png "Streamlit UI")
+
+### Structured JSON Output+ download
+
+![Streamlit Home Page](Screenshots/json.png "Streamlit UI")
+
+### Retrieved quotes page 
+
+![Streamlit Home Page](Screenshots/retrieved.png "Streamlit UI")
+
+### Visualizations page
+
+![Streamlit Home Page](Screenshots/visuals.png "Streamlit UI")
+
+---
 
 ## Architecture Overview
 
