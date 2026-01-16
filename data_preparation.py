@@ -1,0 +1,20 @@
+import pandas as pd
+from datasets import load_dataset
+import os
+
+def prepare_data():
+    dataset = load_dataset("Abirate/english_quotes")
+    df = pd.DataFrame(dataset['train'])
+    df = df[['quote', 'author', 'tags']].dropna()
+    df['quote'] = df['quote'].str.strip()
+    df['author'] = df['author'].str.strip()
+    df['context'] = df.apply(
+        lambda x: f"{x['quote']} — {x['author']} ({', '.join(x['tags'])})",
+        axis=1
+    )
+    os.makedirs("saved_data", exist_ok=True)
+    df.to_csv("saved_data/quotes.csv", index=False)
+    print(f"Saved {len(df)} quotes to saved_data/quotes.csv")
+
+if __name__ == "__main__":
+    prepare_data()
