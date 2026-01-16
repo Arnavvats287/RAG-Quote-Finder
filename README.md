@@ -21,21 +21,23 @@ https://youtu.be/zVL5Hq1mDPI
 
 ---
 
----
-
 ## Application Screenshots
 
 ### Streamlit Home Page
-*(Screenshot added in repository)*
-### 🏠 Streamlit Home Page
 
-![Streamlit Home Page](screenshots/homepage.png "Streamlit UI")
+![Streamlit Home Page](Screenshots/home.png "Streamlit UI")
 
-### Structured JSON Output + Download
-*(Screenshot added in repository)*
+### Structured JSON Output+ download
 
-### Visualizations Page
-*(Screenshot added in repository)*
+![Streamlit Home Page](Screenshots/json.png "Streamlit UI")
+
+### Retrieved quotes page 
+
+![Streamlit Home Page](Screenshots/retrieved.png "Streamlit UI")
+
+### Visualizations page
+
+![Streamlit Home Page](Screenshots/visuals.png "Streamlit UI")
 
 ---
 
