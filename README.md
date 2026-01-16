@@ -9,8 +9,10 @@
 
 ##  Demo Video
 
-▶️ **Walkthrough**  
-https://youtu.be/zVL5Hq1mDPI
+▶️ **CLICK HERE👇**
+
+[![Watch the demo](https://img.youtube.com/vi/zVL5Hq1mDPI/hqdefault.jpg
+)](https://youtu.be/zVL5Hq1mDPI)
 
  The demo shows:
 - Full code walkthrough
