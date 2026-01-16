@@ -21,6 +21,25 @@ https://youtu.be/zVL5Hq1mDPI
 
 ---
 
+---
+
+## Application Screenshots
+
+### Streamlit Home Page
+*(Screenshot added in repository)*
+### 🏠 Streamlit Home Page
+
+![Streamlit Home Page](screenshots/homepage.png "Streamlit UI")
+
+### Structured JSON Output + Download
+*(Screenshot added in repository)*
+
+### Visualizations Page
+*(Screenshot added in repository)*
+
+---
+
+
 ## Project Overview
 
 This project implements a **Retrieval-Augmented Generation (RAG)** pipeline using the  
